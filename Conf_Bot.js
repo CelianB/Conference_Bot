@@ -24,7 +24,6 @@ bot.on('ready', function () {
     }
   })
 });
-
 bot.on('message', msg => {
   guildID = msg.guild.id;
   if (msg.channel.name == ChanText) {
@@ -50,15 +49,11 @@ bot.on('message', msg => {
           break;
         case "!pause":
           Clock.pause();
-          SendMessage("pause");
-          break;
-        case "!stop":
-          Clock.pause();
           if (ConfBot.statut == true) {
             ConfBot.statut = false;
-            msg.reply('BOT_conf bien été stoppé');
+            msg.reply('BOT_conf est mis en pause');
           }
-          else if (ConfBot.statut == false) msg.reply('BOT_conf n\'est pas démarré');
+          else if (ConfBot.statut == false) msg.reply('BOT_conf est déjà en pause');
           break;
         case "!reset":
           //Reset the queue
