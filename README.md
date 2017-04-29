@@ -33,6 +33,6 @@ Leave the queue.
 ### *!statut*
 Get the position in the queue (message).
 
-##How to use
+## How to use
 You have to authorise the bot on your discord here :
 `https://discordapp.com/oauth2/authorize?&client_id=305758468596563969&scope=bot`
