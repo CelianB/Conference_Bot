@@ -12,7 +12,7 @@ var IDselected = null; // save ID of the last member selected
 
 var ConfBot = {
   statut: false,
-  time: 30,
+  time: 60,
   queue: []
 };
 
