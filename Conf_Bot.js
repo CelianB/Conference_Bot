@@ -17,7 +17,7 @@ var ConfBot = {
 };
 
 bot.on('ready', function () {
-  SetupChannels(); // Create channels if they dont existe as nasmes :"ChanText" and "ChanVoice"
+  SetupChannels(); // Create channels if they dont existe as names :"ChanText" and "ChanVoice"
   bot.channels.forEach(value => {
     if (value.name == ChanVoice) {
       IDVoice = value.id;//Set the ID channel voice 
@@ -75,7 +75,7 @@ bot.on('message', msg => {
             msg.reply("Erreur dans la commande, veuillez saisir une valeur numérique en seconde supérieur à 5 : \"!set time 30\"");
           }
         }
-        else msg.reply("Le bot doit être stopper pour changer le temps de parole : !stop (la file d'attente ne sera pas reset)");
+        else msg.reply("Le bot doit être stoppé pour changer le temps de parole : !stop (la file d'attente ne sera pas reset)");
       }
     }
     else {
